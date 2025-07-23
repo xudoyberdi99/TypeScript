@@ -26,3 +26,16 @@ let persons: Personlist = [
 ]
 
 console.log(persons)
+
+//Interface
+interface Person1 {
+	readonly firstName: String
+	readonly lastName: String
+	role: String
+}
+
+let person: Person1 = {
+	firstName: 'John',
+	lastName: 'Alex',
+	role: 'Admin',
+}
