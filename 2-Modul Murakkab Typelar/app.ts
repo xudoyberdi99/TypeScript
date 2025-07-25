@@ -39,3 +39,20 @@ let person: Person1 = {
 	lastName: 'Alex',
 	role: 'Admin',
 }
+
+//void agar funksiyaga aynan qandaydir qiymat qaytarishini aytmasak void buladi
+//return type bulmaydi
+
+function greet(name: string): void {
+	console.log(`Hello, ${name}!`)
+}
+
+greet('Alice')
+
+//Unknown Type haqida bu any ga o'xshash lekin farqi shundaki, unknown type dan foydalanish uchun biz uni tekshirishimiz kerak
+let unknownData: unknown = 'Hello, World!'
+if (typeof unknownData === 'string') {
+	console.log(unknownData.toUpperCase()) // Bu to'g'ri, chunki unknownData string
+}
+
+let asasa: string = unknownData as string
