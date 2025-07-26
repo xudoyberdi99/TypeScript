@@ -56,3 +56,9 @@ if (typeof unknownData === 'string') {
 }
 
 let asasa: string = unknownData as string
+
+//never type bu hech qachon qiymat qaytarmaydigan funksiyalar uchun ishlatiladi void dan farqli o'laroq, never type funksiyaning hech qachon tugamaydi yoki xatolik yuz bersa tuxtaydi
+function throwError(message: string): never {
+	//never yozilishi
+	throw new Error(message)
+}
